@@ -2,6 +2,8 @@
 A webfejlesztés tárgy beadandója 
 Kosztel Péter (GR5U27)
 
+Weboldalam domainje: https://kosztelp.github.io/webfejlesztes/
+
 weboldalam témája: Autókat mutattam be a hajtásuk szerint. Igyekeztem minél látványosabbá tenni javascriptekkel. Azért ezt választatottam mert mindig is érdekeltek az autók és így tanulhattam a project közben. 
 
 Az elektromos.html és a benzin.html oldalon lévő javascriptekre kaptam külön engedélyt, hogy nem kell kivinnem külső fájlban ismeretlen probléma miatt. 
