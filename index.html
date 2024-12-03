@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kosztel Péter">
+    <meta name="description" content="Autók bemutatása hajtások szerint">
+    <title>Autók története</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display
+    =swap">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="kepek/favicon-16x16.png">
+
+    <style>
+        label.error{
+            color: #fb8d8d;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Autók bemutatása</h1>
+    </header>
+    <nav>
+            <a class="active" href="#">Home</a>
+            <a href="benzin.html">Benzin</a>
+            <a href="diesel.html">Diesel</a>
+            <a href="elektromos.html">Elektromos</a>
+    </nav>
+    <div class="home">
+        <article>
+            <p>Az autók története a 19. század végén kezdődött, amikor Karl Benz 1886-ban megalkotta az első modern benzinmotoros járművet, amelyet később a világ első "autójának" tekintettek. Ez a jármű, a Benz Patent-Motorwagen, háromkerekű volt, és 0,75 lóerős motor hajtotta. Bár az első autók kezdetben luxuscikknek számítottak, a találmány hamarosan forradalmasította a közlekedést és az emberi mobilitást.</p>
+        </article>
+        <div class="kepek">
+        <div class="image-container">
+            <img src="kepek/elso_auto.png" alt="Első autóról egy kép">
+            <img src="kepek/1886-benz-patentwagon.jpg" alt="1886-os benz patentwagon">
+            <div class="hover-text">Első modern benzinmotoros jármű.</div>
+        </div>
+        <figure class="figura">
+            <img src="kepek/Ford T-modell.jpg" alt="Henry Ford által alkotott első autó" class="general">
+            <img src="kepek/T-modell 2.jpg" alt="Henry Ford által alkotott első autó" class="general">
+            <figcaption>Henry Ford által alkotott első autó</figcaption> <br>
+        </figure>
+        <br>
+        <article>A 19. század végén és a 20. század elején számos mérnök és feltaláló járult hozzá az autóipar fejlődéséhez. Gottlieb Daimler és Wilhelm Maybach Németországban dolgoztak a belső égésű motor továbbfejlesztésén, míg az Egyesült Államokban Ransom Olds és Henry Ford a gyártási technológiák tökéletesítésén fáradoztak. Az amerikai autóipar különösen gyors fejlődést mutatott, amikor Henry Ford 1908-ban bemutatta a Model T-t. A Ford által bevezetett futószalagos gyártás (1913) radikálisan csökkentette az autók előállítási költségeit, így az addig főként gazdagok által használt járművek az átlagemberek számára is megfizethetővé váltak.
+        </article>
+        <br>
+        </div>
+        <article>
+            A 20. század közepére az autók nemcsak a közlekedés eszközei lettek, hanem a modern élet elengedhetetlen részei is. A gépjárművekben fokozatosan megjelentek olyan technológiai újítások, mint:
+            <li>
+                Villamosítás: Az elektromos indítómotor az 1910-es években tette könnyebbé az autók használatát, kiküszöbölve a kézi indítást.
+            </li>
+            <li>
+            Biztonsági fejlesztések: Az 1950-es évektől kezdve az autógyártók nagyobb hangsúlyt fektettek a biztonságra. Megjelentek az első biztonsági övek (Volvo, 1959), légzsákok (1970-es évek), és az idő múlásával az aktív biztonsági rendszerek, mint az ABS, az ESP és a vészfékrendszerek.
+            </li>
+            <li>Kényelem: A légkondicionálás az 1930-as években jelent meg luxusautókban, majd az 1960-as évektől kezdve vált általánossá. Az 1980-as évekre az autókban egyre több elektronikus rendszer, például fedélzeti számítógép és szórakoztató eszköz kapott helyet.
+            </li>
+        </article><br>
+        <article>
+            A 21. század elejétől az elektromos autók (EV-k) kerültek a figyelem középpontjába, különösen olyan cégek, mint a Tesla, amelyek forradalmasították az elektromos járművek piacát. Az akkumulátortechnológia fejlődése, a megújuló energiaforrások integrálása és az önvezető rendszerek kutatása új irányt adott az autóiparnak. A hibrid autók, mint például a Toyota Prius, hidat képeztek a hagyományos és az elektromos meghajtás között.
+        </article>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript">
+    </script>
+    <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                            arrows: false,
+                            centerPadding: '20px',
+                            slidesToShow: 1
+                    }
+                }
+            ]
+            });
+            });
+    </script>
+    <section class="center slider">
+        <div><a href="galeria/Galeria1.jpg"><img src="galeria/Galeria1.jpg" alt="kep1" title="auto1"></a></div>
+        <div><a href="galeria/Galeria2.jpg"><img src="galeria/Galeria2.jpg" alt="kep2" title="auto2"></a></div>
+        <div><a href="galeria/Galeria3.jpg"><img src="galeria/Galeria3.jpg" alt="kep3" title="auto3"></a></div>
+        <div><a href="galeria/Galeria4.jpg"><img src="galeria/Galeria4.jpg" alt="kep4" title="auto4"></a></div>
+        <div><a href="galeria/Galeria5.jpg"><img src="galeria/Galeria5.jpg" alt="kep5" title="auto5"></a></div>
+        <div><a href="galeria/Galeria6.jpg"><img src="galeria/Galeria6.jpg" alt="kep6" title="auto6"></a></div>
+        <div><a href="galeria/Galeria7.jpg"><img src="galeria/Galeria7.jpg" alt="kep7" title="auto7"></a></div>
+        <div><a href="galeria/Galeria8.jpg"><img src="galeria/Galeria8.jpg" alt="kep8" title="auto8"></a></div>
+        <div><a href="galeria/Galeria9.jpg"><img src="galeria/Galeria9.jpg" alt="kep9" title="auto9"></a></div>
+    </section>
+
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+
+    <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" target="_blank" id="myform" novalidate>
+        <p><label for="q">Hány autó van a te családodban? </label><br>
+            <input type="number" min="0" max="10" step="1" name="q" id="q">
+        </p>
+
+        <p><label for="type">Milyen típusú autót preferál? </label><br>
+            <input type="text" list="tipusok" size="27" name="type" placeholder="Válasszon a lehetőségek közül" id="type">
+            <datalist id="tipusok">
+                <option value="Benzin" name="benzin"></option>
+                <option value="Elektromos" name="elektromos"></option>
+                <option value="Diesel" name="diesel"></option>
+                <option value="Hibrid" name="hibrid"></option>
+                <option value="Felsoroltak közül egyik sem" name="nincs"></option>
+                <option value="Nem preferálok semmilyen autót se" name="valamimas"></option>
+            </datalist>
+        </p>
+
+        <p><label for="freq">Ha van autója akkor heti hányszor használja?<br>
+            <label><input type="radio" name="freq" value="1szer" id="freq">Heti 0-1 nap</label><br>
+            <label><input type="radio" name="freq" value="2szer">Heti 2 nap</label><br>
+            <label><input type="radio" name="freq" value="3szor">Heti 3 nap</label><br>
+            <label><input type="radio" name="freq" value="4szer">Heti 4 nap</label><br>
+            <label><input type="radio" name="freq" value="5szor">Heti 5 vagy annál több nap</label><br>
+        </label>
+        </p>
+
+        <p><label for="mikor">Mikor vásárolta az autóját? (Ha nincsen autója adja meg a mai dátumot)</label><br>
+            <input type="month" id="mikor" name="mikor">
+        </p>
+
+        <p><label for="kor">Hány évesen szerezte meg a jogosítványt?</label><br>
+            <input type="range" id="kor" min="17" max="100" step="1" name="kor">
+            <span id="korErtek"></span>
+        </p>
+
+        <p><label>Ön a kinézetet vagy a kényelmet preferálja?<br>
+            <label>Kényelem<input type="checkbox" id="kenyelem" value="igen" name="kenkin"></label><br>
+            <label>Kinézet<input type="checkbox" id="kinezet" value="nem" name="kenkin"></label><br>
+            </label>
+        </p>
+        
+        <progress id="progressbar" value="0" max="100"></progress><br>
+
+        <label for="email">Adja meg az email címét:</label><br>
+        <input type="email" id="email" name="email"><br>
+    <input type="submit" value="Válasz beküldése" name="elkuld">
+    <input type="reset" value="Alaphelyzet" name="reset" id="reset">
+    </form>
+    <script>
+        $(document).ready(function(){
+        $("#myform").validate({
+            rules: {
+                q: "required",
+                type: "required",
+                mikor: {
+                required: true,
+                },
+                kor: "required",
+                freq: "required",
+                kenkin: "required",
+                email: {
+                required: true,
+                email: true,
+                },
+                },
+            messages: {
+                q: " Adj meg egy értéket!",
+                type: " Add meg milyen autótípust preferál!",
+                kenkin: "Válasszon az opciók közül!",
+                mikor: {
+                required: " Adj meg egy dátumot!",
+                },
+                freq: "Kérlek válassz!",
+                email: " Kérlek valós email címet adj meg!",
+                kor: " Add meg hány évesen szerezted meg a jogosítványt, ha nincsen még akkor a korodat írd be kérlek!",
+                },
+        });
+        });
+        </script>
+
+    <script src="urlap.js">
+    </script>
+    </div>
+    <footer>
+        <p>Kosztel Péter Budapest Corvinus Egyetem.</p>
+    </footer>
+</body>
+</html>

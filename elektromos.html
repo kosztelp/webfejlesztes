@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kosztel Péter">
+    <meta name="description" content="Autók bemutatása hajtások szerint">
+    <title>Autók története</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Elektromos autók bemutatása</h1>
+    </header>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="benzin.html">Benzin</a>
+            <a href="diesel.html">Diesel</a>
+            <a class="active" href="#">Elektromos</a>
+    </nav>
+    </div>
+    <div class="home">
+        <article>
+            Az elektromos autók története az 1800-as évek végére nyúlik vissza, amikor az első elektromos járműveket kifejlesztették. Az 1830-as években skót feltaláló, Robert Anderson már készített elektromos meghajtású kocsit, de az igazi áttörést csak a 20. század elején érte el, amikor az elektromos autók népszerűsége felívelt. Azonban az elektromos járművek hamar háttérbe szorultak, amikor az olcsóbb, erősebb és nagyobb hatótávú benzinmotorok elérhetők lettek, főként Henry Ford Model T-jének köszönhetően.
+        </article><br>
+        <div class="tesla">
+            <img src="kepek/tesla.jpeg" alt="tesla">
+        </div>
+        <article>
+            Az elektromos autók csak az 1990-es évektől kezdtek újra teret nyerni, különösen a környezetvédelmi szempontok előtérbe kerülésével. Azóta a technológia gyorsan fejlődött, és a mai modern elektromos autók már fejlett akkumulátorokkal, nagy hatótávval és gyors töltési lehetőségekkel rendelkeznek. Az olyan gyártók, mint a Tesla, az elektromos autók piacát forradalmasították, miközben a nagyobb autógyártók is egyre több elektromos modellt kínálnak.
+        </article><br>
+        <div class="calculator">
+            <label for="cartype">Válassza ki az autó típusát:</label>
+            <select id="cartype">
+                <option value="benzines">Benzines</option>
+                <option value="diesel">Dízel</option>
+                <option value="elektromos">Elektromos</option>
+            </select>
+    
+            <label for="distance">Adja meg a megtett távolságot (km):</label>
+            <input type="number" id="distance" min="0" step="1" placeholder="Írja be a távolságot">
+        
+            <input type="button" id="calculate" value="Számolás">
+            =
+            <input type="text" id="result" readonly>
+        </div><br>
+        <article>
+            Az elektromos autók számos szempontból előnyösebbek, mint a benzines és dízeles járművek:<br>
+
+            <ol>Környezetbarátabbak: Mivel az elektromos autók nem bocsátanak ki szén-dioxidot működés közben, jelentősen csökkentik a légszennyezést és a károsanyag-kibocsátást. Ez különösen fontos a városokban, ahol a közlekedésből származó szennyezés jelentős egészségügyi problémákat okoz.</ol>
+
+            <ol>Energiahatékonyság: Az elektromos motorok hatékonyabbak, mint a belső égésű motorok. Az elektromos autók kevesebb energiát veszítenek el hő formájában, így a felhasznált energiának nagyobb része közvetlenül a jármű meghajtására fordítódik.</ol>
+
+            <ol>Kevesebb karbantartás: Az elektromos autók kevesebb mozgó alkatrésszel rendelkeznek, ezért általában kevesebb karbantartást igényelnek. Nincs szükség olajcserére, és a fékek is lassabban kopnak az energiatakarékos, regeneratív fékezés miatt.</ol>
+
+            <ol>Gazdaságosabb üzemeltetés: Bár az elektromos autók kezdeti beszerzési költsége magasabb lehet, az elektromos energia költsége alacsonyabb, mint a benzin vagy dízel, és sok helyen állami támogatásokat is kínálnak az elektromos autók vásárlásához.</ol>
+
+        </article>    
+    </div>
+    <footer>
+        <p>Kosztel Péter Budapest Corvinus Egyetem.</p>
+    </footer>
+        <!--<script src="urlap.js"></script>-->
+     <script>
+        const cartype = document.getElementById("cartype");
+        const distanceinput = document.getElementById("distance");
+        const calculatebutton = document.getElementById("calculate");
+        const resultdiv = document.getElementById("result");
+
+        const co2perkm = {
+        benzines: 120, // Benzines autó Co2 kibocsátása
+        diesel: 100,   // Dízel autó Co2 kibocsátása
+        elektromos: 0  // Elektromos autó Co2 kibocsátása
+        };
+
+        function calculateCO2() {
+            const cartypevalue = cartype.value;
+            const distance = parseFloat(distanceinput.value);
+            const co2Emission = co2perkm[cartypevalue] * distance;
+
+            let resulttext = "";
+            if (cartypevalue === "elektromos") {
+             resulttext = `Az elektromos autóval ${distance} km megtétele, nem bocsátott ki közvetlen CO₂-t.`;
+            } 
+            else {
+                resulttext = `A(z) ${cartypevalue} autóval ${distance} km megtétele során ${co2Emission} gramm CO₂ került kibocsátásra.`;
+            }
+            resultdiv.value = resulttext;
+        }
+        calculatebutton.addEventListener("click", calculateCO2);   
+     </script>
+
+</body>
+</html>

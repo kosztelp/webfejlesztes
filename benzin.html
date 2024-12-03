@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kosztel Péter">
+    <meta name="description" content="Autók bemutatása hajtások szerint">
+    <title>Autók története</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Benzines autók bemutatása</h1>
+    </header>
+    <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="#">Benzin</a>
+            <a href="diesel.html">Diesel</a>
+            <a href="elektromos.html">Elektromos</a>
+    </nav>
+    </div>
+    <div class="home">
+        <article>
+            A benzinmotoros autók gyorsan elterjedtek a 20. század elején, főként azért, mert a benzin jobb teljesítményt nyújtott a könnyű személyautóknak. A Ford T-modell és a tömeggyártás lehetővé tette, hogy az autók megfizethetőek legyenek, így egyre többen férhettek hozzá a benzinmotoros autókhoz.
+        </article>
+        <article>
+            A benzinmotoros autók elterjedése szorosan összefügg az Otto-motorral is, amelynek működési elve a belső égésű motorok alapját képezi. Az Otto-motor Nikolaus Otto nevéhez fűződik, aki 1876-ban fejlesztette ki ezt a négyütemű motortípust. Az Otto-motor négy ciklusa – szívás, sűrítés, égés (munkaütem), és kipufogás – forradalmasította a járműipart azáltal, hogy hatékonyabb és megbízhatóbb energiát biztosított.
+        </article>
+        <div class="csuszka">
+        <input type="range" id="rangeSlider" min="1" max="4" value="1">
+        </div>
+        <div class="benzin-container">
+                <div class="benzin-image">
+                  <img id="image" src="kepek/Otto1.jpg" alt="Húzd el a csúszkát" class="image">
+                </div>
+                <div class="inf"> 
+                <p id="info">Kitolás: A négyütemű motorok negyedik üteme. A kitolás során a dugattyú felfele mozog, miközben a kiömlő szelepek nyitva vannak és a beömlők zárva. A felfele mozgás során a dugattyú kinyomja az égésterméket a hengertérből a szabadba. Amikor a dugattyú eléri a felső holtpontját, akkor a folyamat a szívás fázissal kezdődik elölről.</p>
+                </div>
+        </div><br>
+        <div class="utem">
+            <img src="kepek/4utemu.jpeg" alt="4utemumotor">
+        </div>
+    <aside class="elonyok">A benzinmotoros autóknak számos előnyük van a dízel és az elektromos autókkal szemben:</aside>
+    <aside>
+        <ul>
+        <li>Hatékonyság és rugalmasság: Az Otto-motor a benzint levegővel keveri, és a gyújtógyertya által létrehozott szikra indítja be az égést. Ez az eljárás magas fordulatszámot és gyors teljesítményváltozást tesz lehetővé, ami ideális a könnyű személyautókhoz.</li>
+        <li>Egyszerű konstrukció: Az Otto-motor egyszerűbb felépítésű, mint például a dízelmotor, ami olcsóbbá tette a gyártását és karbantartását, különösen a korai autógyártásban.</li>
+        <li>Tömeggyártás és elérhetőség: A Ford T-modell és más korabeli autók sikere szorosan kötődik az Otto-motor elérhetőségéhez és tömeggyártásának gazdaságosságához.</li>
+        <li>Zaj és vibráció csökkentése: A benzinmotorok általában csendesebben működnek, ami a vezetési élményt komfortosabbá teszi</li>
+        <li>Kis méret és alacsony súly: Az Otto-motorok kisebbek és könnyebbek lehetnek, mint a dízelmotorok, ami kedvezőbbé teszi a városi és személyautók számára.</li>
+        </ul>
+    </aside>
+        <div class="bauto">
+            <img src="kepek/benzines.jpeg" alt="benzinesauto">
+        </div>
+    </div>
+    <footer>
+        <p>Kosztel Péter Budapest Corvinus Egyetem.</p>
+    </footer>
+    <!--<script src="urlap.js"></script>-->
+    <script>
+        const rangeSlider = document.getElementById("rangeSlider");
+        const image = document.getElementById("image");
+        const text = document.getElementById("info");
+
+        const images = ["Otto1.jpg","Otto2.jpg","Otto3.jpg","Otto4.jpg"];
+
+        const texts = [
+        "Kitolás: A négyütemű motorok negyedik üteme. A kitolás során a dugattyú felfele mozog, miközben a kiömlő szelepek nyitva vannak és a beömlők zárva. A felfele mozgás során a dugattyú kinyomja az égésterméket a hengertérből a szabadba. Amikor a dugattyú eléri a felső holtpontját, akkor a folyamat a szívás fázissal kezdődik elölről.",
+        "Munkaütem: A négyütemű motorok harmadik üteme. A munkaütem során a szikra által okozott robbanás lefelé löki a dugattyút. Ebben a fázisban a beömlő és kiömlő szelepek zárva vannak. Tehát ebben a fázisban történik meg az üzemanyag elégetése, amit a motor mechanikai energiává alakít át. Amikor a dugattyú eléri az alsó holtpontját, akkor kezdődik a negyedik ütem.",
+        "Sűrítés: A négyütemű motorok második üteme. A sűrítés során a dugattyú elkezd felfelé mozogni, miközben a beömlő és kiömlő szelepek egyaránt zárva vannak. Ezáltal a levegő és üzemanyag nagyon pontosan meghatározott arányú keveréke egyre kisebb térfogatú lesz. Amikor a keverék a legsűrűbb állapotában van, akkor az elektromos szikra begyújtja azt. A robbanás választja el a második és harmadik ütemet.",
+        "Szívás: A négyütemű motorok első üteme. A szívás során a dugattyú lefelé mozog, miközben a beömlő szelepek nyitva vannak (a kiömlők zárva), amiken keresztül a hengertérbe áramlik a levegő és üzemanyag nagyon pontosan meghatározott arányú keveréke. Amikor a dugattyú eléri az alsó holtpontját, épp, amikor elkezd felfelé mozogni, akkor kezdődik a második ütem."
+        ];
+
+        rangeSlider.addEventListener("input", fgv) //frissül ha változik a range
+        function fgv(){
+            const index = rangeSlider.value - 1; //indexek miatt -1
+            image.src = images[index];
+            text.innerHTML = texts[index];
+            };
+    </script>
+</body>
+</html>
