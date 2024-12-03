@@ -6,7 +6,7 @@ weboldalam témája: Autókat mutattam be a hajtásuk szerint. Igyekeztem minél
 
 Az elektromos.html és a benzin.html oldalon lévő javascriptekre kaptam külön engedélyt, hogy nem kell kivinnem külső fájlban ismeretlen probléma miatt. 
 javascriptek az alábbi oldalakon vannak: 
--	index.html oldalon lévő űrlaphoz csináltam egy progressbart, ami azt mutatja arányosan, hogy hol jár a kérdések megválaszolásában a felhasználó. Illetve a type=”range”-hez megcsináltam hogy mutassa az értéket. 
+-	index.html oldalon lévő űrlaphoz csináltam egy progressbart, ami azt mutatja arányosan, hogy hol jár a kérdések megválaszolásában a felhasználó. Illetve a type=”range”-hez megcsináltam hogy mutassa az értéket.
 -	benzin.html oldalon készítettem egy ábra szöveg párost, ami a 4 ütemű motornak az ütemeit mutatja. 
 -	az elektromos.html oldalon pedig csináltam egy co2 számológépet, ami azt számolja ki, hogy különböző távok megtétele után egyes hajtások mennyi gramm co2-t termelnek.
  a weboldalam tartalmaz 2 darab jquery megoldást az egyik egy galéria a másik pedig egy validáló. Ezeknek a kódjait nem én készítettem, hanem Láng Blanka előadásából másoltam. Ezt utólag a weboldalamhoz illesztettem. 
