@@ -33,6 +33,8 @@ form {
 
 /*Galéria stílus*/
 .slider {
+    display: flex;
+    flex: 1 1 100%;
     width: 80%;
     padding-bottom: 2vh;
     min-width: 400px;
@@ -54,7 +56,7 @@ form {
     .slick-current { opacity: 1; }
 
 .slick-dots li button {
-    background-color: #ccc;
+    background-color: black;
   }
   
   .slick-dots li.slick-active button {
@@ -187,33 +189,35 @@ figure:hover figcaption {
     font-size: 20px;
     text-align: justify;
 }
-
+.first {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
 .utem{
     display:flex;
     justify-content: center;
     flex: 1 1 100%;
-    height: 28vh;
+}
+.utem img{
+    border-radius: 10px;
 }
 .bauto{
     flex: 1 1 100%;
     display:flex;
     justify-content: center;
-    height: 22vh;
 }
 .tesla{
     flex: 1 1 100%;
     display:flex;
     justify-content: center;
-    height: 30vh;
     margin-bottom: 10px;
 }
 .bmw{
-    flex: 1 1 100%;
     display:flex;
     justify-content: center;
-    height: 22vh;
 }
 .bmw img {
+    width:50%;
     margin: 10px;
 }
 article, aside{
@@ -356,28 +360,26 @@ footer {
     .tablazat{
         font-size: 22px;
     }
-    .utem{
-        height: 38vh;
+    .utem img{
+        width: 70%;
+        max-width: 650px;
     }
-    .bauto{
-        height: 26vh;
+    .bauto img{
+        max-width: 375px;
+        width: 40%
     }
-    .tesla{
-        height: 35vh;
+    .tesla img {
+        width: 50%;
+        max-width: 400px;
     }
-    .bmw{
-        height: 35vh;
+    .bmw img{
+    max-height: 35vh;
+    max-width: 425px;
     }
     #cartype, #distance, #calculate{
         height: 4vh;
       }
 @media only screen and (min-width: 768px) {
-    .utem{
-        height: 48vh;
-    }
-    .bauto{
-        height: 32vh;
-    }
     .home{
         font-size: 24px;
     }
